@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NativeMusic</string>
+    <string name="main_title">我的首页</string>
+    <string name="avater">专辑图片</string>
+    <string name="dsada">音乐名</string>
+
+</resources>

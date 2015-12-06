@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="64dip"
+    android:layout_alignParentBottom="true"
+    android:background="#999999" >
+
+    <ImageView
+        android:id="@+id/headicon_iv"
+        android:layout_width="64dip"
+        android:layout_height="64dip"
+        android:background="@drawable/img_album_background" />
+
+    <SeekBar
+        android:id="@+id/pbDuration"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/playLayout"
+        android:layout_toRightOf="@id/headicon_iv"
+        android:maxHeight="1dip"
+        android:minHeight="1dip"
+        android:progressDrawable="@drawable/progress_style"
+        android:thumb="@drawable/check_box_checked"
+        android:thumbOffset="0dip" />
+
+    <ImageButton
+        android:id="@+id/btn_playNext2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/selector_music_btn"
+        android:padding="3.0dip"
+        android:src="@drawable/icon_next_normal" />
+
+    <FrameLayout
+        android:id="@+id/playLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12.0dip"
+        android:layout_toLeftOf="@id/btn_playNext2" >
+
+        <ImageButton
+            android:id="@+id/btn_pause2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_music_btn"
+            android:padding="3.0dip"
+            android:src="@drawable/icon_pause_normal"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/btn_play2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_music_btn"
+            android:padding="3.0dip"
+            android:src="@drawable/icon_play_normal" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6.0dip"
+        android:layout_toLeftOf="@id/playLayout"
+        android:layout_toRightOf="@id/headicon_iv"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/artist_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/musicname_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/position_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" - "
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/duration_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
